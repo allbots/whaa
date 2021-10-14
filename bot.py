@@ -1,3 +1,4 @@
+import vk
 from time import sleep
 from vk_api import VkApi
 from settings import OWNER_ID, POST_ID, TOKENS, DELETE_COMMENTS, DELAY_BEFORE_DELETION
