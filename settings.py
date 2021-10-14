@@ -8,7 +8,7 @@ POST_ID = 6713149
 TOKENS = environ.get('TOKENS').split(',')
 
 # Задержка в секундах (на данный момент 295 секунд)
-DELAY = (28 * 10) + 15
+DELAY = (2 * 1) + 15
 
 # Удалять коментарий? (True - да, False - нет)
 DELETE_COMMENTS = True
