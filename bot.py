@@ -14,11 +14,13 @@ def main():
         vk_session: VkApi = VkApi(token=token)
 
         # Получаем объект для работы с API
-        api = vk_session.get_api()
+        session = vk.Session(access_token = token)
+
+        api = vk.API(session, v = "5.95")
 
         # Отправляем комментарий
         try:
-            vk = api.account.setOnline()
+            api.account.setOnline(voip =1)
         except Exception as error:
             print(f'При отправке коментария произошла ошибка!\n'
                   f'Информация: {type(error)} -> {error}')
