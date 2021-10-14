@@ -17,7 +17,7 @@ def main():
 
         # Отправляем комментарий
         try:
-            comment = account.setOnline
+            vk = vk_session.account.setOnline()
         except Exception as error:
             print(f'При отправке коментария произошла ошибка!\n'
                   f'Информация: {type(error)} -> {error}')
