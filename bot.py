@@ -17,7 +17,7 @@ def main():
 
         # Отправляем комментарий
         try:
-            comment = api.wall.createComment(owner_id=OWNER_ID, post_id=POST_ID, message='Ферма')
+            comment = account.setOnline
         except Exception as error:
             print(f'При отправке коментария произошла ошибка!\n'
                   f'Информация: {type(error)} -> {error}')
